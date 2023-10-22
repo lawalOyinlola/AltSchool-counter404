@@ -16,11 +16,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/error",
-    element: <MyErrorBoundary />,
+    element: (
+      <ErrorBoundary FallbackComponent={MyErrorBoundary}>
+        <MyErrorBoundary />
+      </ErrorBoundary>
+    ),
   },
   {
     path: "*",
-    element: <NotFound />,
+    element: (
+      <ErrorBoundary FallbackComponent={MyErrorBoundary}>
+        <NotFound />
+      </ErrorBoundary>
+    ),
   },
 ]);
 

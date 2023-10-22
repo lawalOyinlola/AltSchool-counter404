@@ -35,12 +35,12 @@ You can try the app live at [Counter404 Demo App](https://altschool-counter404.n
 
 ## Dependencies
 
-react
-react-dom
-react-router-dom
-react-error-boundary
-react-feather
-@phosphor-icons/react:
+- react
+- react-dom
+- react-router-dom
+- react-error-boundary
+- react-feather
+- @phosphor-icons/react
 
 ## Custom Hook
 

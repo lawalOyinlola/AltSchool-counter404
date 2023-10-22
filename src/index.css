@@ -90,6 +90,7 @@ a {
   border: 1px solid transparent;
   padding: 0.6rem 1.2rem;
   font-weight: 500;
+  color: #e2e0dc;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: all 0.25s;
@@ -119,7 +120,7 @@ button:active {
   }
 }
 
-@media (max-width: 41.2em) {
+@media (max-width: 42em) {
   .link {
     font-size: 1.2rem;
   }
