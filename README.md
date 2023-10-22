@@ -75,10 +75,10 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## Screenshot
 
-![Desktop screenshot](./counter-desktop.png)
-![Mobile screenshot](./counter.png)
-![404 Error screenshot](./404.png)
-![ErrorBoundary screenshot](./error.png)
+![Desktop screenshot](./public/counter-desktop.png)
+![Mobile screenshot](./public/counter.png)
+![404 Error screenshot](./public/404.png)
+![ErrorBoundary screenshot](./public/error.png)
 
 ## Built with
 
