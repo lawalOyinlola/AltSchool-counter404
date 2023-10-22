@@ -1,0 +1,27 @@
+.not-found {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.code {
+  font-size: 10rem;
+}
+
+.home {
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid #e2e0dc;
+  color: #e2e0dc;
+  border-radius: 0;
+  padding: 0.6rem 4rem;
+}
+
+a:hover {
+  border: 1px solid #fa9500;
+}

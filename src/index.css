@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  max-width: 144rem;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  background-color: #6997a1;
+  color: #e2e0dc;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+}
+
+.container {
+  overflow: hidden;
+  width: 37rem;
+  background-color: #242424f3;
+  border-radius: 8px;
+  padding: 2.4rem;
+  box-shadow: 0 4rem 5rem rgba(86, 4, 97, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value input {
+  outline: none;
+  border: none;
+  text-align: center;
+  background-color: #4f5963;
+  font-size: 6rem;
+}
+
+h1 {
+  cursor: pointer;
+  font-size: 6rem;
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.margin {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem auto -1rem;
+}
+
+.margin input {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+}
+
+button,
+a {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+a:hover,
+a:active {
+  color: #fa9500;
+}
+
+button:hover,
+button:active {
+  border-color: #007aff;
+}
+
+a:active,
+button:active {
+  transform: translateY(1px);
+}
+
+@media (prefers-color-scheme: light) {
+  a:hover {
+    border: #007aff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 41.2em) {
+  .link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 52%;
+  }
+
+  .code {
+    font-size: 8rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    font-size: 1.8rem;
+  }
+}
