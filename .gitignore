@@ -22,7 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-.gitignore
-.gitattributes
-.eslintrc.cjs
-vite.config.js
+
+
