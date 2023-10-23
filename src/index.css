@@ -8,10 +8,6 @@ html {
   font-size: 62.5%;
 }
 
-:root {
-  color-scheme: light dark;
-}
-
 body {
   max-width: 144rem;
   font-family: Inter, system-ui, sans-serif;
@@ -109,15 +105,6 @@ button:active {
 a:active,
 button:active {
   transform: translateY(1px);
-}
-
-@media (prefers-color-scheme: light) {
-  a:hover {
-    border: #007aff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @media (max-width: 42em) {
