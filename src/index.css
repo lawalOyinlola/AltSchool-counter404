@@ -24,6 +24,25 @@ body {
   transition: all 0.25s;
 }
 
+h1 {
+  cursor: pointer;
+  font-size: 6rem;
+}
+
+h2 {
+  /* text-transform: uppercase; */
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
 .container {
   overflow: hidden;
   width: 37rem;
@@ -50,18 +69,6 @@ body {
   color: #e2e0dc;
   background-color: #4f5963;
   font-size: 6rem;
-}
-
-h1 {
-  cursor: pointer;
-  font-size: 6rem;
-}
-
-p {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: bold;
-  opacity: 0.6;
 }
 
 .margin {

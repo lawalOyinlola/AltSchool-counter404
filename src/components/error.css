@@ -10,18 +10,12 @@ img {
   max-width: 30%;
 }
 
-h2 {
-  text-transform: capitalize;
-  line-height: 1.2;
-  font-weight: bold;
-  margin-bottom: 0.4rem;
-}
-
 ul {
   font-size: 1.4rem;
   text-align: start;
   line-height: 1.5;
-  margin-bottom: 14rem;
+  margin: 4rem auto 10rem;
+  list-style: none;
 }
 
 .link {
