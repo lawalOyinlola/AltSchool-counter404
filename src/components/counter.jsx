@@ -1,6 +1,29 @@
 import { useNavigate } from "react-router-dom";
 import { RotateCcw } from "react-feather";
+import { Link } from "react-router-dom";
 import useCounter from "../hooks/useCounter";
+import "./counter.css";
+
+function Nav() {
+  const display = useNavigate();
+  function triggerError() {
+    try {
+      // Simulating an error
+      let listCountries;
+      console.log(listCountries.target.value);
+    } catch (error) {
+      display("/error");
+    }
+  }
+
+  return (
+    <div className="box">
+      <Link to="/">HomePage</Link>
+      <a onClick={triggerError}>Test Error Handling</a>
+      <Link to="/notfound">404 Error</Link>
+    </div>
+  );
+}
 
 function Counter() {
   const display = useNavigate();
@@ -17,21 +40,11 @@ function Counter() {
     setValue,
   } = useCounter();
 
-  function triggerError() {
-    try {
-      // Simulating an error
-      let listCountries;
-      console.log(listCountries.target.value);
-    } catch (error) {
-      display("/error");
-    }
-  }
-
   return (
-    <div>
+    <div className="counter">
       <div className="container">
         <form className="value" onSubmit={setValue}>
-          <p>Count is:</p>
+          <p className="heading">Count is:</p>
           {isEditing ? (
             <input
               type="text"
@@ -77,8 +90,8 @@ function Counter() {
             Increment
           </button>
         </div>
-        <a onClick={triggerError}>Test Error Handling</a>
       </div>
+      <Nav />
     </div>
   );
 }

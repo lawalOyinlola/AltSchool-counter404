@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 6rem;
 }
 
 img {
@@ -10,12 +10,8 @@ img {
   max-width: 30%;
 }
 
-ul {
-  font-size: 1.4rem;
-  text-align: start;
-  line-height: 1.5;
-  margin: 4rem auto 10rem;
-  list-style: none;
+.links {
+  margin-top: 6rem;
 }
 
 .link {

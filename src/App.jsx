@@ -1,13 +1,22 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
-import MyErrorBoundary from "./components/error";
+import HomePage from "./components/homepage";
 import Counter from "./components/counter";
+import MyErrorBoundary from "./components/error";
 import NotFound from "./components/notfound";
 import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: (
+      <ErrorBoundary FallbackComponent={MyErrorBoundary}>
+        <HomePage />
+      </ErrorBoundary>
+    ),
+  },
+  {
+    path: "/counter",
     element: (
       <ErrorBoundary FallbackComponent={MyErrorBoundary}>
         <Counter />

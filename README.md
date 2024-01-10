@@ -54,13 +54,16 @@ It can also trigger an Error by using the "Test Error Handling" button and when 
 
 ## Folder Structure
 
-The project structure is organized as follows: src/: Contains the source code of the application.
-components/: React components used in the app.
-App.js: The main application component.
-public/: Contains the public assets.
+The project structure is organized as follows:
+index.html : Root HTML
+README.md : The documentation file.
 package.json: Lists the project dependencies and scripts.
-README.md/: The documentation file.
-index.html
+src: Contains the source code of the application.
+src/main.jsx : The main application component
+src/index.css : Main CSS styling
+src/App.jsx: Contains all component used in the App.
+src/components: Contains React components and styling used in the app.
+public: Contains the public assets.
 ...and others
 
 ## Contributing
@@ -75,10 +78,10 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ## Screenshot
 
-![Desktop screenshot](./public/counter-desktop.png)
-![Mobile screenshot](./public/counter.png)
+![Desktop screenshot](./public/counter.png)
 ![404 Error screenshot](./public/404.png)
 ![ErrorBoundary screenshot](./public/error.png)
+![HomePage screenshot](./public/homepage.png)
 
 ## Built with
 

@@ -4,11 +4,13 @@ import "./error.css";
 function MyErrorBoundary() {
   return (
     <div className="error-container">
-      <img
-        src="laptop-notification.png"
-        alt="A laptop with notification icons"
-      />
-      <h1>Something went wrong!</h1>
+      <div>
+        <img
+          src="laptop-notification.png"
+          alt="A laptop with notification icons"
+        />
+        <h1>Something went wrong</h1>
+      </div>
       <ul>
         <h2>This is why you&apos;re seeing this page:</h2>
         <li>Your input is Not a Number(NaN)</li>
@@ -18,10 +20,10 @@ function MyErrorBoundary() {
       </ul>
       <div className="links">
         <Link to="/" className="link">
-          Click here to go back to previous page.
+          Go back to home page.
         </Link>
         <Link to="/*" className="link">
-          Click here to view 404/not found page.
+          View 404/not found page.
         </Link>
       </div>
     </div>
